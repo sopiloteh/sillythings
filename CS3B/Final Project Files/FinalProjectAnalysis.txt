@@ -1,0 +1,23 @@
+Final Project Analysis
+Erick Bravo
+Monday July 27th 2020
+CS003B
+
+What areas of requirements are completed/covered:
+The majority of preparation documents and some effort on the GUI portion
+
+What sections are missing:
+A working program. Things missing would be logic to allow input from the file into the program. After that it would be logic for scheduling the schedule to the board and then writing that information back
+
+What are the suggestions for future enhancements for this project:
+I guess announce the Final project and preparations earlier
+That wouldn't make it a test of sorts though, maybe.
+
+What are the suggestions for starting a similar project:
+Something I can think of is a car wash place. The user would have options to select what
+Trim level they would like options of soap, wax, shampoo, vacuum. If they want hand wash vs machine. Oil change and or a gas top off too. Also an important thing would be a 
+Damage feature, if somethings broken or not done right, discount is applied
+
+How would you change this course for future 6-week sessions:
+Probably have teamwork done in more consistant times, rather then it be ever-changing , have groups of 3 or 4 work together for the 6 weeks including on the final project. It would make it easier to collaborate and give the student less of a feeling of drowning.
+Of course accountability would need to be brought in and maybe some sort of duties check list would need to be made so everyone has a turn to code

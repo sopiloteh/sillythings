@@ -1,0 +1,3 @@
+Erick; Drinks; 123.00; 07/17/2020
+Flopster; Lodging; 2342.00; 07/19/2020
+Master Chief; Conference; 4334.00; 07/20/2020

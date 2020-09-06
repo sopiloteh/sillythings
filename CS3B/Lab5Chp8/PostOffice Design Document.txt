@@ -1,0 +1,139 @@
+CS003B
+Erick Bravo
+Design Document P8.7 Post Office
+
+
+Step 1: Find out which methods you are asked to supply.
+Create a post office that can take a 5 digit zip code and convert it to barcode
+It also has to reverse that
+
+
+
+Step 2: Specify the public interface.
+Public class bars
+{
+}
+
+
+Step 3: Document the public interface.
+
+Public class bars
+{
+	// encodes the variable once it is inputted
+	public static String encode(String zipCode){}
+
+	// decodes the converted variable once it is done by String encode
+	public static String decode(String encodedValue){}
+
+	// intakes input and displays output
+	public static void main(String[] args){}
+}
+
+
+
+Step 4: Determine instance variables.
+static String [] codes = {"||:::",":::||","::|:|","::||:", ":|::|",":|:|:",":||::","|:::|", "|::|:","|:|::"};
+
+String encodedValue = "|";
+int sum = 0;
+String zipCode = sc.nextLine();
+
+
+Step 5: Implement constructors and methods.
+
+
+    public static String encode (String zipCode)
+    {
+        // if numbers less then 5, error out
+        if (zipCode.length() != 5)
+        {
+            return "Invalid! Please reenter";
+        }
+        
+        // this adds a divider between each number thats translated
+        String encodedValue = "|";
+        int sum = 0;
+        
+        // looks at each number and sees where the conversion to replace is
+        for (int i = 0; i < zipCode.length(); i++)
+        {
+            sum += (zipCode.charAt(i) - '0');
+            encodedValue += codes[zipCode.charAt(i) -'0'];
+        }
+        
+        sum %= 10;
+        sum = 10 - sum;
+        
+        encodedValue += codes[sum] + "|";
+        
+        return encodedValue;
+    }
+
+    private static String searchDigit(String code)
+    {
+        for (int i = 0; i < codes.length; i++)
+        {
+            if (codes[i].equals(code))
+            {
+                return i + " ";
+            }
+            
+            
+        }
+        return " ";
+    }
+
+public static String decode(String encodedValue)
+        {
+            String newEncodedValue = encodedValue.substring(1, encodedValue.length() -1);
+            String decodedValue = " ";
+            
+            // if the inputted barcode numbers are short or longer then 5 it errors
+            if (newEncodedValue.length()%5 != 0)
+            {
+                return "Error, Error, Error";
+            }
+            
+            int previous = 0;
+            
+            // looks for barcode length and then using the string variable replaces them back with numbers
+            for (int i = 5; i < newEncodedValue.length(); i+=5)
+            {
+                String digit = searchDigit(newEncodedValue.substring(previous, i));
+                
+                if (!digit.equals(" "))
+                {
+                    decodedValue += digit;
+                }
+            
+                else 
+                {
+                    return "Wrong Digit!!";
+                }
+            
+                previous = i;
+            }
+            
+
+            return decodedValue;
+        }
+
+
+
+Step 6: Test your class.
+
+Enter a zipcode please
+12345
+Encoded value of 12345 is: 
+|:::||::|:|::||::|::|:|:|::|:|:|
+
+Decoded value of |:::||::|:|::||::|::|:|:|::|:|:| is: 
+ 1 2 3 4 5 
+
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  4.058 s
+Finished at: 2020-07-18T20:13:38-07:00
+------------------------------------------------------------------------
+

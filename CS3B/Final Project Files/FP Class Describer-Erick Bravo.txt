@@ -1,0 +1,26 @@
+Erick Bravo
+July 20th 2020
+Final Project Class Schedule
+
+List of possible classes for creating a College Building classroom scheduler
+
+1) Main/Tester class - to actually run program
+
+2) College Building - class to hold the rooms and the assorted meetings, speakers
+
+3) Classroom class - has ability to accept highest priority requests, lives in college building class
+
+4) Lecture class - has highest priority to get a classroom
+
+5) Seminar class - has second highest priority to get a classroom
+
+6) guest speakers class  - third highest priority to get a classroom
+
+7) event class - this class lets you set the start and end time, how long the event runs
+
+8) Club Meetings class - least priority  to get a classroom
+
+9) request class - this polls all the requests from the requesters to plug into the schedule.
+
+10) Schedule class - takes input from the request class and plugs them into whatever spots are available at the time
+

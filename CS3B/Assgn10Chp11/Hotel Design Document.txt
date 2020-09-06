@@ -1,0 +1,98 @@
+CS003B
+Erick Bravo
+Design Document P11.10 Hotel
+
+
+Step 1: Find out which methods you are asked to supply.
+Create a file where it contains the following as such
+Client; Dinner; Conference; Lodging; etc; Sale Amount; Date;
+It will error out if it doesn't follow this format
+
+
+
+Step 2: Specify the public interface.
+Public class hostel
+
+
+
+Step 3: Document the public interface.
+Public class hostel
+{
+Public static void main (String[] args) throws IOException
+{}
+}
+
+
+Step 4: Determine instance variables.
+        String File, line;
+        double total = 0;
+
+
+Step 5: Implement constructors and methods.
+try
+        {
+            System.out.print("\nEnter file name please: \n");
+            Scanner scn = new Scanner(System.in);
+            
+            File = scn.nextLine();
+            FileReader fr = new FileReader(new File(File));
+            BufferedReader br = new BufferedReader(fr);
+            
+            System.out.println("CALCULATIING");
+            line = br.readLine();
+            
+            while (line != null)
+            {
+                String temp[] = line.split(";");
+                
+                for (int i = 0; i < temp.length; i++)
+                {
+                    System.out.print(temp[i]+"\n");
+                    if ( i == i)
+                    {
+                        System.out.print("\t");
+                    }
+                }
+                
+                total += Double.parseDouble(temp[2]);
+                System.out.println();
+                line = br.readLine();
+            }
+            
+            System.out.println("\n Total: "+total);
+        }
+        
+        catch (FileNotFoundException e)
+        {
+            System.out.println("File does not exisit");
+        }
+
+
+
+Step 6: Test your class.
+Enter file name please: 
+/Users/erickbravo/NetBeansProjects/Hotel/src/main/java/hotel.txt
+CALCULATIING
+Erick
+	 Drinks
+	 123.00
+	 07/17/2020
+	
+Flopster
+	 Lodging
+	 2342.00
+	 07/19/2020
+	
+Master Chief
+	 Conference
+	 4334.00
+	 07/20/2020
+	
+
+ Total: 6799.0
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  6.454 s
+Finished at: 2020-07-17T13:00:44-07:00
+------------------------------------------------------------------------

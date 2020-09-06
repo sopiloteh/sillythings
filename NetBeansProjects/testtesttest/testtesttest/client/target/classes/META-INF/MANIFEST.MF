@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1594336575432
+Build-Jdk: 14.0.1
+Built-By: erickbravo
+Bundle-ManifestVersion: 2
+Bundle-Name: testtesttest General Client Code
+Bundle-SymbolicName: com.mycompany.testtesttest
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.mycompany.testtesttest;version="1.0.0.SNAPSHOT"
+Import-Package: com.dukescript.api.canvas;version="[0.12,1)",com.dukescr
+ ipt.api.events;version="[0.4,1)",com.mycompany.testtesttest.js;version=
+ "[1.0,2)",net.java.html;version="[1.7,2)",net.java.html.boot;version="[
+ 1.7,2)",net.java.html.charts;version="[0.9,1)",net.java.html.leaflet;ve
+ rsion="[0.7,1)",net.java.html.leaflet.event;version="[0.7,1)",org.netbe
+ ans.html.json.spi;version="[1.7,2)"
+Tool: Bnd-2.1.0.20130426-122213

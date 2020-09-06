@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.testtesttest.IntegrationTest" time="11.337" tests="5" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="14.0.1+7"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/erickbravo/NetBeansProjects/testtesttest/testtesttest"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.dir" value="/Users/erickbravo/NetBeansProjects/testtesttest/testtesttest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.runtime.version" value="14.0.1+7"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/_z/2607rfm126z2826xcg8kpzyw0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/Apache NetBeans 12.0.app/Contents/Resources/NetBeans/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/Apache NetBeans 12.0.app/Contents/Resources/NetBeans/netbeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/erickbravo/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Applications/NetBeans/Apache NetBeans 12.0.app/Contents/Resources/NetBeans/netbeans/java/maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="58.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.16"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="library.jansi.path" value="/Applications/NetBeans/Apache NetBeans 12.0.app/Contents/Resources/NetBeans/netbeans/java/maven/lib/jansi-native"/>
+    <property name="user.home" value="/Users/erickbravo"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="14"/>
+    <property name="user.name" value="erickbravo"/>
+    <property name="java.class.path" value="/Applications/NetBeans/Apache NetBeans 12.0.app/Contents/Resources/NetBeans/netbeans/java/maven/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/Apache NetBeans 12.0.app/Contents/Resources/NetBeans/netbeans/java/maven-nblib/netbeans-eventspy.jar install"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="14.0.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/Apache NetBeans 12.0.app/Contents/Resources/NetBeans/netbeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2020-04-14"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="testDrawingOfACanvas" classname="com.mycompany.testtesttest.IntegrationTest" time="1.328"/>
+  <testcase name="testLineChart" classname="com.mycompany.testtesttest.IntegrationTest" time="1.329"/>
+  <testcase name="testMap" classname="com.mycompany.testtesttest.IntegrationTest" time="1.8"/>
+  <testcase name="testPieChart" classname="com.mycompany.testtesttest.IntegrationTest" time="1.8"/>
+  <testcase name="Bck2Brwsr" classname="com.mycompany.testtesttest.IntegrationTest" time="8.389">
+    <error message="java.lang.AssertionError:Searching for com.mycompany.testtesttest.IntegrationTest&#10;Starting the test class com.mycompany.testtesttest.IntegrationTest&#10;testStarted com.mycompany.testtesttest.IntegrationTest testMap&#10;testStarted com.mycompany.testtesttest.IntegrationTest testLineChart&#10;testStarted com.mycompany.testtesttest.IntegrationTest testDrawingOfACanvas&#10;testStarted com.mycompany.testtesttest.IntegrationTest testPieChart&#10;error: testMap(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx&#10;error: testLineChart(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx&#10;error: testDrawingOfACanvas(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx&#10;error: testPieChart(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx&#10;End of test run class com.mycompany.testtesttest.IntegrationTest&#10;" type="java.lang.Throwable">java.lang.Throwable: 
+java.lang.AssertionError:Searching for com.mycompany.testtesttest.IntegrationTest
+Starting the test class com.mycompany.testtesttest.IntegrationTest
+testStarted com.mycompany.testtesttest.IntegrationTest testMap
+testStarted com.mycompany.testtesttest.IntegrationTest testLineChart
+testStarted com.mycompany.testtesttest.IntegrationTest testDrawingOfACanvas
+testStarted com.mycompany.testtesttest.IntegrationTest testPieChart
+error: testMap(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+error: testLineChart(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+error: testDrawingOfACanvas(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+error: testPieChart(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+End of test run class com.mycompany.testtesttest.IntegrationTest
+
+</error>
+    <system-err><![CDATA[[INFO] Found precompiled JAR version of file:/Users/erickbravo/.m2/repository/org/apidesign/bck2brwsr/launcher.http/0.32/launcher.http-0.32.jar at jar:file:/Users/erickbravo/.m2/repository/org/apidesign/bck2brwsr/emul/0.32/emul-0.32-bck2brwsr.jar!/org.apidesign.bck2brwsr-launcher.http-debug.js. Using.
+[INFO] Found precompiled JAR version of file:/Users/erickbravo/.m2/repository/org/apidesign/bck2brwsr/emul/0.32/emul-0.32-rt.jar at jar:file:/Users/erickbravo/.m2/repository/org/apidesign/bck2brwsr/emul/0.32/emul-0.32-bck2brwsr.jar!/emul-0.32-debug.js. Using.
+[INFO] Request for 0 case. Sending net.java.html.junit.BrowserRunner.execute
+[INFO] Found precompiled JAR version of file:/Users/erickbravo/.m2/repository/com/dukescript/api/junit-browser-runner/0.9/junit-browser-runner-0.9.jar at jar:file:/Users/erickbravo/.m2/repository/com/dukescript/api/junit-browser-runner/0.9/junit-browser-runner-0.9-bck2brwsr.jar!/junit-browser-runner-0.9-debug.js. Using.
+[INFO] Found precompiled JAR version of file:/Users/erickbravo/.m2/repository/com/dukescript/api/junit-osgi/4.12/junit-osgi-4.12.jar at jar:file:/Users/erickbravo/.m2/repository/com/dukescript/api/junit-browser-runner/0.9/junit-browser-runner-0.9-bck2brwsr.jar!/com.dukescript.api-junit-osgi-debug.js. Using.
+[WARNING] Searching for com.mycompany.testtesttest.IntegrationTest
+[WARNING] 
+java.lang.IllegalStateException: Cannot initialize dumper; unexpected JDK implementation. Please run Retrolambda using the Java agent (enable forking in the Maven plugin).
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:38)
+	at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:88)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars$EmulationResources.addClassResource(Bck2BrwsrJars.java:370)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listDir(Bck2BrwsrJars.java:434)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listDir(Bck2BrwsrJars.java:440)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listDir(Bck2BrwsrJars.java:440)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listDir(Bck2BrwsrJars.java:440)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listDir(Bck2BrwsrJars.java:440)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureDir(Bck2BrwsrJars.java:416)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:129)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:101)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:75)
+	at org.apidesign.bck2brwsr.launcher.CompileCP.compileFromClassPath(CompileCP.java:82)
+	at org.apidesign.bck2brwsr.launcher.Bck2BrwsrLauncher.compileFromClassPath(Bck2BrwsrLauncher.java:76)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Res.compileFromClassPath(BaseHTTPLauncher.java:790)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Classes.service(BaseHTTPLauncher.java:1028)
+	at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:209)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: java.lang.RuntimeException: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:48)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.close(LambdaClassDumper.java:55)
+		at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:94)
+		... 18 more
+	Caused by: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+		at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+		at java.base/java.lang.reflect.Field.checkAccess(Field.java:1073)
+		at java.base/java.lang.reflect.Field.set(Field.java:776)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:46)
+		... 20 more
+Caused by: java.lang.NoSuchFieldException: modifiers
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.makeNonFinal(LambdaClassDumper.java:59)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:32)
+	... 19 more
+[WARNING] Starting the test class com.mycompany.testtesttest.IntegrationTest
+[WARNING] 
+[FINE] service exception
+[WARNING] testStarted com.mycompany.testtesttest.IntegrationTest testMap
+[WARNING] 
+[WARNING] testStarted com.mycompany.testtesttest.IntegrationTest testLineChart
+[WARNING] 
+[WARNING] testStarted com.mycompany.testtesttest.IntegrationTest testDrawingOfACanvas
+[WARNING] testStarted com.mycompany.testtesttest.IntegrationTest testPieChart
+[WARNING] 
+[WARNING] 
+[INFO] No precompiled version for file:/Users/erickbravo/NetBeansProjects/testtesttest/testtesttest/client/target/testtesttest-1.0-SNAPSHOT.jar found. Compiling.
+java.lang.IllegalStateException: Cannot initialize dumper; unexpected JDK implementation. Please run Retrolambda using the Java agent (enable forking in the Maven plugin).
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:38)
+	at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:88)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars$EmulationResources.addClassResource(Bck2BrwsrJars.java:370)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listJAR(Bck2BrwsrJars.java:211)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:164)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:101)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:75)
+	at org.apidesign.bck2brwsr.launcher.CompileCP.compileJAR(CompileCP.java:47)
+	at org.apidesign.bck2brwsr.launcher.Bck2BrwsrLauncher.compileJar(Bck2BrwsrLauncher.java:66)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Res.compileJar(BaseHTTPLauncher.java:785)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Classes.service(BaseHTTPLauncher.java:1003)
+	at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:209)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: java.lang.RuntimeException: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:48)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.close(LambdaClassDumper.java:55)
+		at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:94)
+		... 13 more
+	Caused by: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+		at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+		at java.base/java.lang.reflect.Field.checkAccess(Field.java:1073)
+		at java.base/java.lang.reflect.Field.set(Field.java:776)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:46)
+		... 15 more
+Caused by: java.lang.NoSuchFieldException: modifiers
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.makeNonFinal(LambdaClassDumper.java:59)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:32)
+	... 14 more
+java.lang.IllegalStateException: Cannot initialize dumper; unexpected JDK implementation. Please run Retrolambda using the Java agent (enable forking in the Maven plugin).
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:38)
+	at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:88)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars$EmulationResources.addClassResource(Bck2BrwsrJars.java:370)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listJAR(Bck2BrwsrJars.java:211)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:164)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:101)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:75)
+	at org.apidesign.bck2brwsr.launcher.CompileCP.compileJAR(CompileCP.java:47)
+	at org.apidesign.bck2brwsr.launcher.Bck2BrwsrLauncher.compileJar(Bck2BrwsrLauncher.java:66)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Res.compileJar(BaseHTTPLauncher.java:785)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Classes.service(BaseHTTPLauncher.java:1003)
+	at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:209)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: java.lang.RuntimeException: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:48)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.close(LambdaClassDumper.java:55)
+		at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:94)
+		... 13 more
+	Caused by: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+		at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+		at java.base/java.lang.reflect.Field.checkAccess(Field.java:1073)
+		at java.base/java.lang.reflect.Field.set(Field.java:776)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:46)
+		... 15 more
+Caused by: java.lang.NoSuchFieldException: modifiers
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.makeNonFinal(LambdaClassDumper.java:59)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:32)
+	... 14 more
+java.lang.IllegalStateException: Cannot initialize dumper; unexpected JDK implementation. Please run Retrolambda using the Java agent (enable forking in the Maven plugin).
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:38)
+	at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:88)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars$EmulationResources.addClassResource(Bck2BrwsrJars.java:370)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listJAR(Bck2BrwsrJars.java:211)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:164)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:101)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:75)
+	at org.apidesign.bck2brwsr.launcher.CompileCP.compileJAR(CompileCP.java:47)
+	at org.apidesign.bck2brwsr.launcher.Bck2BrwsrLauncher.compileJar(Bck2BrwsrLauncher.java:66)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Res.compileJar(BaseHTTPLauncher.java:785)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Classes.service(BaseHTTPLauncher.java:1003)
+	at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:209)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: java.lang.RuntimeException: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:48)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.close(LambdaClassDumper.java:55)
+		at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:94)
+		... 13 more
+	Caused by: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+		at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+		at java.base/java.lang.reflect.Field.checkAccess(Field.java:1073)
+		at java.base/java.lang.reflect.Field.set(Field.java:776)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:46)
+		... 15 more
+Caused by: java.lang.NoSuchFieldException: modifiers
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.makeNonFinal(LambdaClassDumper.java:59)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:32)
+	... 14 more
+java.lang.IllegalStateException: Cannot initialize dumper; unexpected JDK implementation. Please run Retrolambda using the Java agent (enable forking in the Maven plugin).
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:38)
+	at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:88)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars$EmulationResources.addClassResource(Bck2BrwsrJars.java:370)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listJAR(Bck2BrwsrJars.java:211)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:164)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:101)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:75)
+	at org.apidesign.bck2brwsr.launcher.CompileCP.compileJAR(CompileCP.java:47)
+	at org.apidesign.bck2brwsr.launcher.Bck2BrwsrLauncher.compileJar(Bck2BrwsrLauncher.java:66)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Res.compileJar(BaseHTTPLauncher.java:785)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Classes.service(BaseHTTPLauncher.java:1003)
+	at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:209)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: java.lang.RuntimeException: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:48)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.close(LambdaClassDumper.java:55)
+		at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:94)
+		... 13 more
+	Caused by: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+		at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+		at java.base/java.lang.reflect.Field.checkAccess(Field.java:1073)
+		at java.base/java.lang.reflect.Field.set(Field.java:776)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:46)
+		... 15 more
+Caused by: java.lang.NoSuchFieldException: modifiers
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.makeNonFinal(LambdaClassDumper.java:59)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:32)
+	... 14 more
+java.lang.IllegalStateException: Cannot initialize dumper; unexpected JDK implementation. Please run Retrolambda using the Java agent (enable forking in the Maven plugin).
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:38)
+	at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:88)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars$EmulationResources.addClassResource(Bck2BrwsrJars.java:370)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listJAR(Bck2BrwsrJars.java:211)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:164)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:101)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:75)
+	at org.apidesign.bck2brwsr.launcher.CompileCP.compileJAR(CompileCP.java:47)
+	at org.apidesign.bck2brwsr.launcher.Bck2BrwsrLauncher.compileJar(Bck2BrwsrLauncher.java:66)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Res.compileJar(BaseHTTPLauncher.java:785)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Classes.service(BaseHTTPLauncher.java:1003)
+	at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:209)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: java.lang.RuntimeException: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:48)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.close(LambdaClassDumper.java:55)
+		at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:94)
+		... 13 more
+	Caused by: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+		at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+		at java.base/java.lang.reflect.Field.checkAccess(Field.java:1073)
+		at java.base/java.lang.reflect.Field.set(Field.java:776)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:46)
+		... 15 more
+Caused by: java.lang.NoSuchFieldException: modifiers
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.makeNonFinal(LambdaClassDumper.java:59)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:32)
+	... 14 more
+java.lang.IllegalStateException: Cannot initialize dumper; unexpected JDK implementation. Please run Retrolambda using the Java agent (enable forking in the Maven plugin).
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:38)
+	at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:88)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars$EmulationResources.addClassResource(Bck2BrwsrJars.java:370)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listJAR(Bck2BrwsrJars.java:211)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:164)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:101)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:75)
+	at org.apidesign.bck2brwsr.launcher.CompileCP.compileJAR(CompileCP.java:47)
+	at org.apidesign.bck2brwsr.launcher.Bck2BrwsrLauncher.compileJar(Bck2BrwsrLauncher.java:66)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Res.compileJar(BaseHTTPLauncher.java:785)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Classes.service(BaseHTTPLauncher.java:1003)
+	at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:209)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: java.lang.RuntimeException: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:48)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.close(LambdaClassDumper.java:55)
+		at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:94)
+		... 13 more
+	Caused by: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+		at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+		at java.base/java.lang.reflect.Field.checkAccess(Field.java:1073)
+		at java.base/java.lang.reflect.Field.set(Field.java:776)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:46)
+		... 15 more
+Caused by: java.lang.NoSuchFieldException: modifiers
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.makeNonFinal(LambdaClassDumper.java:59)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:32)
+	... 14 more
+java.lang.IllegalStateException: Cannot initialize dumper; unexpected JDK implementation. Please run Retrolambda using the Java agent (enable forking in the Maven plugin).
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:38)
+	at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:88)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars$EmulationResources.addClassResource(Bck2BrwsrJars.java:370)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listJAR(Bck2BrwsrJars.java:211)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:164)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:101)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:75)
+	at org.apidesign.bck2brwsr.launcher.CompileCP.compileJAR(CompileCP.java:47)
+	at org.apidesign.bck2brwsr.launcher.Bck2BrwsrLauncher.compileJar(Bck2BrwsrLauncher.java:66)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Res.compileJar(BaseHTTPLauncher.java:785)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Classes.service(BaseHTTPLauncher.java:1003)
+	at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:209)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: java.lang.RuntimeException: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:48)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.close(LambdaClassDumper.java:55)
+		at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:94)
+		... 13 more
+	Caused by: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+		at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+		at java.base/java.lang.reflect.Field.checkAccess(Field.java:1073)
+		at java.base/java.lang.reflect.Field.set(Field.java:776)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:46)
+		... 15 more
+Caused by: java.lang.NoSuchFieldException: modifiers
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.makeNonFinal(LambdaClassDumper.java:59)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:32)
+	... 14 more
+invoke dynamic: 322
+  type: 6
+[SEVERE] Cannot handle com/mycompany/testtesttest/Data.class
+[INFO] Found precompiled JAR version of file:/Users/erickbravo/.m2/repository/org/apidesign/bck2brwsr/vm4brwsr/0.32/vm4brwsr-0.32.jar at jar:file:/Users/erickbravo/.m2/repository/org/apidesign/bck2brwsr/emul/0.32/emul-0.32-bck2brwsr.jar!/org.apidesign.bck2brwsr-vm4brwsr-debug.js. Using.
+[INFO] No precompiled version for file:/Users/erickbravo/NetBeansProjects/testtesttest/testtesttest/client/target/testtesttest-1.0-SNAPSHOT.jar found. Compiling.
+java.lang.IllegalStateException: Cannot initialize dumper; unexpected JDK implementation. Please run Retrolambda using the Java agent (enable forking in the Maven plugin).
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:38)
+	at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:88)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars$EmulationResources.addClassResource(Bck2BrwsrJars.java:370)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listJAR(Bck2BrwsrJars.java:211)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:164)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:101)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:75)
+	at org.apidesign.bck2brwsr.launcher.CompileCP.compileJAR(CompileCP.java:47)
+	at org.apidesign.bck2brwsr.launcher.Bck2BrwsrLauncher.compileJar(Bck2BrwsrLauncher.java:66)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Res.compileJar(BaseHTTPLauncher.java:785)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Classes.service(BaseHTTPLauncher.java:1003)
+	at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:209)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: java.lang.RuntimeException: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:48)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.close(LambdaClassDumper.java:55)
+		at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:94)
+		... 13 more
+	Caused by: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+		at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+		at java.base/java.lang.reflect.Field.checkAccess(Field.java:1073)
+		at java.base/java.lang.reflect.Field.set(Field.java:776)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:46)
+		... 15 more
+Caused by: java.lang.NoSuchFieldException: modifiers
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.makeNonFinal(LambdaClassDumper.java:59)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:32)
+	... 14 more
+java.lang.IllegalStateException: Cannot initialize dumper; unexpected JDK implementation. Please run Retrolambda using the Java agent (enable forking in the Maven plugin).
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:38)
+	at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:88)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars$EmulationResources.addClassResource(Bck2BrwsrJars.java:370)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listJAR(Bck2BrwsrJars.java:211)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:164)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:101)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:75)
+	at org.apidesign.bck2brwsr.launcher.CompileCP.compileJAR(CompileCP.java:47)
+	at org.apidesign.bck2brwsr.launcher.Bck2BrwsrLauncher.compileJar(Bck2BrwsrLauncher.java:66)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Res.compileJar(BaseHTTPLauncher.java:785)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Classes.service(BaseHTTPLauncher.java:1003)
+	at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:209)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: java.lang.RuntimeException: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:48)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.close(LambdaClassDumper.java:55)
+		at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:94)
+		... 13 more
+	Caused by: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+		at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+		at java.base/java.lang.reflect.Field.checkAccess(Field.java:1073)
+		at java.base/java.lang.reflect.Field.set(Field.java:776)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:46)
+		... 15 more
+Caused by: java.lang.NoSuchFieldException: modifiers
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.makeNonFinal(LambdaClassDumper.java:59)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:32)
+	... 14 more
+java.lang.IllegalStateException: Cannot initialize dumper; unexpected JDK implementation. Please run Retrolambda using the Java agent (enable forking in the Maven plugin).
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:38)
+	at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:88)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars$EmulationResources.addClassResource(Bck2BrwsrJars.java:370)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listJAR(Bck2BrwsrJars.java:211)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:164)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:101)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:75)
+	at org.apidesign.bck2brwsr.launcher.CompileCP.compileJAR(CompileCP.java:47)
+	at org.apidesign.bck2brwsr.launcher.Bck2BrwsrLauncher.compileJar(Bck2BrwsrLauncher.java:66)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Res.compileJar(BaseHTTPLauncher.java:785)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Classes.service(BaseHTTPLauncher.java:1003)
+	at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:209)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: java.lang.RuntimeException: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:48)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.close(LambdaClassDumper.java:55)
+		at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:94)
+		... 13 more
+	Caused by: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+		at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+		at java.base/java.lang.reflect.Field.checkAccess(Field.java:1073)
+		at java.base/java.lang.reflect.Field.set(Field.java:776)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:46)
+		... 15 more
+Caused by: java.lang.NoSuchFieldException: modifiers
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.makeNonFinal(LambdaClassDumper.java:59)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:32)
+	... 14 more
+java.lang.IllegalStateException: Cannot initialize dumper; unexpected JDK implementation. Please run Retrolambda using the Java agent (enable forking in the Maven plugin).
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:38)
+	at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:88)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars$EmulationResources.addClassResource(Bck2BrwsrJars.java:370)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listJAR(Bck2BrwsrJars.java:211)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:164)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:101)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:75)
+	at org.apidesign.bck2brwsr.launcher.CompileCP.compileJAR(CompileCP.java:47)
+	at org.apidesign.bck2brwsr.launcher.Bck2BrwsrLauncher.compileJar(Bck2BrwsrLauncher.java:66)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Res.compileJar(BaseHTTPLauncher.java:785)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Classes.service(BaseHTTPLauncher.java:1003)
+	at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:209)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: java.lang.RuntimeException: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:48)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.close(LambdaClassDumper.java:55)
+		at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:94)
+		... 13 more
+	Caused by: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+		at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+		at java.base/java.lang.reflect.Field.checkAccess(Field.java:1073)
+		at java.base/java.lang.reflect.Field.set(Field.java:776)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:46)
+		... 15 more
+Caused by: java.lang.NoSuchFieldException: modifiers
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.makeNonFinal(LambdaClassDumper.java:59)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:32)
+	... 14 more
+java.lang.IllegalStateException: Cannot initialize dumper; unexpected JDK implementation. Please run Retrolambda using the Java agent (enable forking in the Maven plugin).
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:38)
+	at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:88)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars$EmulationResources.addClassResource(Bck2BrwsrJars.java:370)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listJAR(Bck2BrwsrJars.java:211)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:164)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:101)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:75)
+	at org.apidesign.bck2brwsr.launcher.CompileCP.compileJAR(CompileCP.java:47)
+	at org.apidesign.bck2brwsr.launcher.Bck2BrwsrLauncher.compileJar(Bck2BrwsrLauncher.java:66)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Res.compileJar(BaseHTTPLauncher.java:785)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Classes.service(BaseHTTPLauncher.java:1003)
+	at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:209)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: java.lang.RuntimeException: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:48)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.close(LambdaClassDumper.java:55)
+		at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:94)
+		... 13 more
+	Caused by: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+		at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+		at java.base/java.lang.reflect.Field.checkAccess(Field.java:1073)
+		at java.base/java.lang.reflect.Field.set(Field.java:776)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:46)
+		... 15 more
+Caused by: java.lang.NoSuchFieldException: modifiers
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.makeNonFinal(LambdaClassDumper.java:59)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:32)
+	... 14 more
+java.lang.IllegalStateException: Cannot initialize dumper; unexpected JDK implementation. Please run Retrolambda using the Java agent (enable forking in the Maven plugin).
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:38)
+	at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:88)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars$EmulationResources.addClassResource(Bck2BrwsrJars.java:370)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listJAR(Bck2BrwsrJars.java:211)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:164)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:101)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:75)
+	at org.apidesign.bck2brwsr.launcher.CompileCP.compileJAR(CompileCP.java:47)
+	at org.apidesign.bck2brwsr.launcher.Bck2BrwsrLauncher.compileJar(Bck2BrwsrLauncher.java:66)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Res.compileJar(BaseHTTPLauncher.java:785)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Classes.service(BaseHTTPLauncher.java:1003)
+	at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:209)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: java.lang.RuntimeException: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:48)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.close(LambdaClassDumper.java:55)
+		at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:94)
+		... 13 more
+	Caused by: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+		at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+		at java.base/java.lang.reflect.Field.checkAccess(Field.java:1073)
+		at java.base/java.lang.reflect.Field.set(Field.java:776)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:46)
+		... 15 more
+Caused by: java.lang.NoSuchFieldException: modifiers
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.makeNonFinal(LambdaClassDumper.java:59)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:32)
+	... 14 more
+java.lang.IllegalStateException: Cannot initialize dumper; unexpected JDK implementation. Please run Retrolambda using the Java agent (enable forking in the Maven plugin).
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:38)
+	at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:88)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars$EmulationResources.addClassResource(Bck2BrwsrJars.java:370)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.listJAR(Bck2BrwsrJars.java:211)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:164)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:101)
+	at org.apidesign.bck2brwsr.aot.Bck2BrwsrJars.configureFrom(Bck2BrwsrJars.java:75)
+	at org.apidesign.bck2brwsr.launcher.CompileCP.compileJAR(CompileCP.java:47)
+	at org.apidesign.bck2brwsr.launcher.Bck2BrwsrLauncher.compileJar(Bck2BrwsrLauncher.java:66)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Res.compileJar(BaseHTTPLauncher.java:785)
+	at org.apidesign.bck2brwsr.launcher.BaseHTTPLauncher$Classes.service(BaseHTTPLauncher.java:1003)
+	at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:209)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+	Suppressed: java.lang.RuntimeException: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:48)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.close(LambdaClassDumper.java:55)
+		at org.apidesign.bck2brwsr.aot.RetroLambda.process(RetroLambda.java:94)
+		... 13 more
+	Caused by: java.lang.IllegalAccessException: class net.orfjackal.retrolambda.lambdas.LambdaClassDumper cannot access a member of class java.lang.invoke.InnerClassLambdaMetafactory (in module java.base) with modifiers "private static final"
+		at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+		at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+		at java.base/java.lang.reflect.Field.checkAccess(Field.java:1073)
+		at java.base/java.lang.reflect.Field.set(Field.java:776)
+		at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.uninstall(LambdaClassDumper.java:46)
+		... 15 more
+Caused by: java.lang.NoSuchFieldException: modifiers
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.makeNonFinal(LambdaClassDumper.java:59)
+	at net.orfjackal.retrolambda.lambdas.LambdaClassDumper.install(LambdaClassDumper.java:32)
+	... 14 more
+invoke dynamic: 322
+  type: 6
+[SEVERE] Cannot handle com/mycompany/testtesttest/Data$Html4JavaType.class
+[INFO] Found precompiled JAR version of file:/Users/erickbravo/.m2/repository/org/netbeans/html/net.java.html.json/1.7/net.java.html.json-1.7.jar at jar:file:/Users/erickbravo/.m2/repository/org/apidesign/bck2brwsr/ko-bck2brwsr/0.32/ko-bck2brwsr-0.32-bck2brwsr.jar!/org.netbeans.html-net.java.html.json-debug.js. Using.
+[INFO] Found precompiled JAR version of file:/Users/erickbravo/.m2/repository/org/netbeans/html/net.java.html/1.7/net.java.html-1.7.jar at jar:file:/Users/erickbravo/.m2/repository/org/apidesign/bck2brwsr/ko-bck2brwsr/0.32/ko-bck2brwsr-0.32-bck2brwsr.jar!/org.netbeans.html-net.java.html-debug.js. Using.
+[WARNING] 
+[WARNING] error: testMap(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+[WARNING] error: testLineChart(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+[WARNING] 
+[WARNING] error: testDrawingOfACanvas(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+[WARNING] 
+[WARNING] error: testPieChart(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+[WARNING] 
+[WARNING] End of test run class com.mycompany.testtesttest.IntegrationTest
+[WARNING] 
+[INFO] Received result for case 0 = java.lang.AssertionError:Searching for com.mycompany.testtesttest.IntegrationTest
+Starting the test class com.mycompany.testtesttest.IntegrationTest
+testStarted com.mycompany.testtesttest.IntegrationTest testMap
+testStarted com.mycompany.testtesttest.IntegrationTest testLineChart
+testStarted com.mycompany.testtesttest.IntegrationTest testDrawingOfACanvas
+testStarted com.mycompany.testtesttest.IntegrationTest testPieChart
+error: testMap(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+error: testLineChart(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+error: testDrawingOfACanvas(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+error: testPieChart(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+End of test run class com.mycompany.testtesttest.IntegrationTest
+
+]]></system-err>
+  </testcase>
+</testsuite>

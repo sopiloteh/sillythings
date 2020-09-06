@@ -1,0 +1,11 @@
+The following classes  should have inheritance to Event
+Lecture
+Club Meeting
+Seminar
+Guest Speaker 
+
+All of these are "Is-A" type of objects, all are Events
+I also think Event should have inheritance to Classroom but its a probably not a for sure yet
+
+
+

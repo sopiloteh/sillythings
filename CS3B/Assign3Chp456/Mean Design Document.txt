@@ -1,0 +1,62 @@
+CS003B
+Erick Bravo
+Design Document P6.10
+
+
+Step 1: Find out which methods you are asked to supply.
+
+Find an average and standard deviation from users inputted numbers
+Until it is stopped by entering 0
+
+
+Step 2: Specify the public interface.
+public class dataSet
+
+public dataSet()
+
+public void add(double value)
+
+public double getAve()
+
+public double getStanDev()
+
+
+Step 3: Document the public interface.
+
+
+Step 4: Determine instance variables.
+    private double sum;
+    private double square;
+    private double smallest;
+    private double largest;
+    private double count;
+    
+
+
+Step 5: Implement constructors and methods.
+
+
+Step 6: Test your class.
+Enter a value or 0 to quit
+1
+Enter a value or 0 to quit
+2
+Enter a value or 0 to quit
+3
+Enter a value or 0 to quit
+
+4
+Enter a value or 0 to quit
+5
+Enter a value or 0 to quit
+6
+Enter a value or 0 to quit
+0
+Average of values 3.5
+Standard deviation 8.734987120768983
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  10.632 s
+Finished at: 2020-06-26T10:39:41-07:00
+------------------------------------------------------------------------

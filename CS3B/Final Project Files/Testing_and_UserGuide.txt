@@ -1,0 +1,56 @@
+Test Plan & User Guide
+
+TestPlan
+*******************************************************************************
+Ideally if this program was working correctly, Id test it as such
+For the batch file id load it up with a normal day use following banking hours, with a break for lunch for an hour where no classes would be full.
+
+Then id throw some walk up requests that had higher priority events, such as lectures and have them be rather long, say around 120 minutes or more.
+This would either overwrite the old batch files positions and leave new holes or it would
+Just continue the same and say its not allowed.
+
+Id also include some events that weren't in the hours of operation in the batch file and see how the program would handle it. If it worked great, it wouldn't even have them on the view schedule. If it was bad, then it wouldn't show any events at all even including walk up ones
+******************************************************************************* 
+
+
+USER GUIDE
+*******************************************************************************
+Welcome to Java Based Classroom Scheduler
+
+For MAC
+-------------------------------------------------------------------------------
+Please run the program first by opening terminal
+Go to cd  User/NetBeansProjects/FinalProjPlan/src/main/java , tap enter
+Please type in javac main.java , tap enter
+
+You'll see some runtime appear for Javas runtime environment gather the required files
+Once completed, enter java main and proceed to run
+
+For Windows
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+The program will have three buttons
+
+Room - opens a window to schedule a room to be able to use it, also lets you save
+
+	Lecture - a dropdown to select the event, this is in level of priority
+	Start - a drop down to select the time, this is in railroad time
+	Length - a drop down to select the length, this is in 30 minute increments
+	Seating - a radio button to select seating or standing
+	Amenitites - a checkbox to select amenities, has two amenities
+	Exit - closes program
+	
+
+Schedule - opens a window to view the schedule
+	
+	TextArea - viewable space to see the schedule
+	Exit - closes program
+
+Exit - closes the program
+
+
+Support
+-------------------------------------------------------------------------------
+For any issues, please contact  idontworkhere@spacex.com
+*******************************************************************************

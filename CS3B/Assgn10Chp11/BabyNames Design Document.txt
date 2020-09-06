@@ -1,0 +1,59 @@
+CS003B
+Erick Bravo
+Design Document P11.1 Babynames
+
+
+Step 1: Find out which methods you are asked to supply.
+Write something that reads in a text file and spits out two files
+One for boys names, the other for girls names
+
+
+
+Step 2: Specify the public interface.
+public class babyNames 
+{
+    public static void main(String[] args) throws FileNotFoundException
+    {
+
+
+
+
+Step 3: Document the public interface.
+
+
+Step 4: Determine instance variables.
+        File babyfile = new File("/Users/erickbravo/NetBeansProjects/Baby/src/main/java/babynames.txt");
+        Scanner inFile = new Scanner(babyfile);
+        PrintWriter girl = new PrintWriter("boynames.txt");
+        PrintWriter boy = new PrintWriter("girlnames.txt");
+        
+
+
+Step 5: Implement constructors and methods.
+ while (inFile.hasNextLine())
+        {
+            int rank = inFile.nextInt();
+            
+            // checks for boys names
+            String boyname = inFile.next();
+            
+            int bCount = inFile.nextInt();
+            double bPercent = inFile.nextDouble();
+            
+            // writes out how many people use that name
+            boy.println(rank+" "+boyname+" "+bCount+" "+bPercent);
+            
+            // checks for girls names
+            String girlname = inFile.next();
+            
+            int gCount = inFile.nextInt();
+            double gPercent = inFile.nextDouble();
+            
+            // writes out how many people use that name
+            girl.println(rank+" "+girlname+" "+gCount+" "+gPercent);
+        }
+
+
+
+Step 6: Test your class.
+See attached boys names and girls names text files

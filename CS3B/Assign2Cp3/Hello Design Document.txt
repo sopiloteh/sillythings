@@ -1,0 +1,10 @@
+CS003B
+Erick Bravo
+Design Document P3.05 Microwave
+
+Step 1: Find out which methods you are asked to supply.
+Step 2: Specify the public interface.
+Step 3: Document the public interface.
+Step 4: Determine instance variables.
+Step 5: Implement constructors and methods.
+Step 6: Test your class.

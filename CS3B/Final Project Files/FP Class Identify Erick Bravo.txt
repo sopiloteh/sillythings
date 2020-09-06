@@ -1,0 +1,80 @@
+Erick Bravo
+July 20th 2020
+Final Project Class Schedule
+
+List of possible responsibilities for the possible classes for creating a College Building classroom scheduler
+
+1) Main/Tester class - to actually run program
+
+	Responsibilities:
+	displays the actual program itself, will have to have some 	sort of GUI element
+	first though, can be done as a terminal display
+	The real issue with this one is to determine if I will 		force all the GUI components here or create an additional 	class just to handle all that
+
+2) College Building - class to hold the rooms and the assorted meetings, speakers
+
+	Responsibilities:
+	contains array lists to contain classrooms and add even 	more classrooms if room is full or needs to be 			adjusted. I think this one should just be super simple, 	its the object holder and gives and takes nothing more
+
+3) Classroom class - has ability to accept highest priority requests, lives in college building class
+
+	Responsibilities:
+	takes input from Schedule class to create an array list 	inside for the classroom
+	has many returns to display what is available at the time
+	like college building nothing too complicated here.
+	Perhaps it might have an action listener
+
+4) Lecture class - has highest priority to get a classroom
+
+	Responsibilities:
+	contains possible variables priority, time and length to 	set  room taking, starting time and event length
+	like college building nothing too complicated here.
+	Perhaps it might have an action listener
+
+
+
+
+
+
+5) Seminar class - has second highest priority to get a classroom
+
+	Responsibilities:
+	contains possible variables priority, time and length to 	set  room taking, starting time and event length
+	like college building nothing too complicated here.
+	Perhaps it might have an action listener
+
+6) guest speakers class  - third highest priority to get a classroom
+
+	Responsibilities:
+	contains possible variables priority, time and length to 	set  room taking, starting time and event length
+	like college building nothing too complicated here.
+	Perhaps it might have an action listener
+
+7) event class - this class lets you set the start and end time, how long the event runs
+
+	Responsibilities:
+	takes Lecture, Seminar, Guest Speakers, Club meetings 		requests to sort them and feed them into Schedule Class
+	I feel as this one will be highly integrated with the GUI
+	as well
+
+8) Club Meetings class - least priority  to get a classroom
+
+	Responsibilities:
+	contains possible variables priority, time and length to 	set  room taking, starting time and event length
+	like college building nothing too complicated here.
+	Perhaps it might have an action listener
+
+9) request class - this polls all the requests from the requesters to plug into the schedule.
+
+	Responsibilities:
+	front facing display that lets a user ask for space for an 	event with certain prerequisites. Another GUI intense 		Class. Maybe it can live on its own separately rather then
+	keeping it close with the main tester
+
+10) Schedule class - takes input from the request class and plugs them into whatever spots are available at the time
+
+	Responsibilities:
+	post user input, this is akin to a calendar and will use 	if else to determine if the perquisites are met or 		not. Once they are met then it is placed in the college 	buildings array. I think this part will be boolean and or 	use a lot to if else statements. I don't see while loops 	working here nor try and catch. Maybe the if/else for 		loops can be a switch instead.
+	
+	
+
+

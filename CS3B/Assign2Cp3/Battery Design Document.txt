@@ -1,0 +1,126 @@
+CS003B
+Erick Bravo
+Design Document P3.14 Battery
+
+Step 1: Find out which methods you are asked to supply.
+Make the computer say hello but then have it get angry and say something else
+
+Step 2: Specify the public interface.
+
+Default
+public simpHello(String name)
+
+This says hello
+public String sayHello()
+
+This says goodbye
+public String sayGoodbye()
+
+This is the computer talking
+public String refuseHelp()
+
+Step 3: Document the public interface.
+public class simpHello 
+{
+    // declares whatever name is used to be a string
+    String name;
+    
+    //this tags the name to where you want it to go
+    public simpHello(String name)
+    {
+        this.name = name;
+    }
+    
+    // this adds the name to the string of hello
+    public String sayHello()
+    {
+        return "Hello! " +name;
+    }
+    
+    // adds a good bye too
+    public String sayGoodbye()
+    {
+        return "Goodbye";
+    }
+    
+    // this will reject the goodbye
+    public String refuseHelp()
+    {
+        return "I'm sorry " +name+ " , I'm afraid I can't do that";
+    }
+}
+
+Step 4: Determine instance variables.
+
+String name;
+
+Step 5: Implement constructors and methods.
+    public simpHello(String name)
+    {
+        this.name = name;
+    }
+
+    public String sayHello()
+    {
+        return "Hello! " +name;
+    }
+
+    public String sayGoodbye()
+    {
+        return "Goodbye";
+    }
+
+    public String refuseHelp()
+    {
+        return "I'm sorry " +name+ " , I'm afraid I can't do that";
+    }
+
+Step 6: Test your class.
+public class simpTestHello 
+{
+    public static void main(String[] args)
+    {
+        // this sets name variable to whater you want it to be
+        sayHello greeter = new sayHello("Erick");
+        // starts off with basic hello
+        System.out.println(greeter.sayHello());
+        // this takes precidence over goodbye
+        System.out.println(greeter.refuseHelp());
+        // then it says goodbye
+        System.out.println(greeter.sayGoodbye());
+    }
+    
+}
+/*
+public class simpTestHello 
+{
+    public static void main(String[] args)
+    {
+        simpHello mess1 = new simpHello();
+        System.out.println(mess1.sayHello());
+        simpHello mess2 = new simpHello();
+        System.out.println(mess2.sayHello());
+        
+    }
+}
+
+original code
+Test results below using Apache NetBeans
+Hello, World!
+Hello, World!
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  0.733 s
+Finished at: 2020-06-22T17:44:39-07:00
+
+modified code
+Hello! Erick
+I'm sorry ErickI'm afraid I can't do that
+Goodbye
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  1.030 s
+Finished at: 2020-06-23T11:05:22-07:00
+*/

@@ -1,0 +1,9 @@
+The following classes should have Aggregation to Schedule
+Classroom
+Request
+
+The following classes should have Aggregation to CollegeBuilding
+Classroom
+
+All of these are "Has-A" type of objects, they all are related to the respective class. Classroom will only go into College building, College Building won't got into classroom to write back. I think at least
+

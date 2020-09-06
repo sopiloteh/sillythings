@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.testtesttest.IntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.337 sec <<< FAILURE! - in com.mycompany.testtesttest.IntegrationTest
+Bck2Brwsr(com.mycompany.testtesttest.IntegrationTest)  Time elapsed: 8.389 sec  <<< ERROR!
+java.lang.Throwable: 
+java.lang.AssertionError:Searching for com.mycompany.testtesttest.IntegrationTest
+Starting the test class com.mycompany.testtesttest.IntegrationTest
+testStarted com.mycompany.testtesttest.IntegrationTest testMap
+testStarted com.mycompany.testtesttest.IntegrationTest testLineChart
+testStarted com.mycompany.testtesttest.IntegrationTest testDrawingOfACanvas
+testStarted com.mycompany.testtesttest.IntegrationTest testPieChart
+error: testMap(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+error: testLineChart(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+error: testDrawingOfACanvas(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+error: testPieChart(com.mycompany.testtesttest.IntegrationTest) net.java.html.BrwsrCtx
+End of test run class com.mycompany.testtesttest.IntegrationTest
+
+

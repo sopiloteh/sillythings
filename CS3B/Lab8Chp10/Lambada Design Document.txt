@@ -1,0 +1,131 @@
+CS003B
+Yonas Adamu & Erick Bravo
+Design Document P10.4 Using Lambada
+
+
+Step 1: Find out which methods you are asked to supply.
+Create a bank function that filters out accounts that are sub 1000,
+Use a lambda function for the filter
+
+
+Step 2: Specify the public interface.
+Public class BankAccount
+Public class BalanceFilter implements Filter
+Public class BalanceMeasurer implements Measurer
+Public interface Filter
+Public interface Measurer
+Public class DataSet
+
+
+
+Step 3: Document the public interface.
+
+// holds all the variables for the bank account
+Public class BankAccount
+{
+}
+
+// this takes out bank accounts less then 1000 dollars
+Public class BalanceFilter implements Filter
+{
+}
+
+// this measures the accounts seeing how big they are
+Public class BalanceMeasurer implements Measurer
+{
+}
+
+// this supposedly uses a lambada function to run correctly 
+Public interface Filter
+{
+}
+
+// measures the 
+Public interface Measurer
+{
+}
+
+//main code, holds the arrays and also creates an average
+Public class DataSet
+{
+}
+
+
+Step 4: Determine instance variables.
+
+Public class BankAccount
+private double balance;
+
+Public class dataset
+double sum = 0;
+double avg = 0;
+int count = 0;
+
+
+Step 5: Implement constructors and methods.
+
+public class BalanceFilter implements Filter
+{
+    // filters out accounts less then 1000 bucks
+    public boolean accept(Object object)
+    {
+        return ((BankAccount) object).getBalance() >= 1000;
+    }
+}
+
+public class BalanceMeasurer implements Measurer
+{
+    //measures how big the account is really
+    public double measure(Object object)
+    {
+        return ((BankAccount) object).getBalance();
+    }
+    
+}
+
+public interface Measurer 
+{   
+    // sizes up the bank account using anObject
+    double measure(Object anObject);    
+}
+
+    public static double average(Object[] objects, Measurer meas, Filter filt)
+    {
+        double sum = 0;
+        double avg = 0;
+        int count = 0;
+        
+        // this sums up the accounts to get the average
+        for (Object ob : objects)
+        {
+            if (filt.accept(ob))
+            {
+                sum += meas.measure(ob);
+                count++;
+            }
+        }
+        
+        // if the accounts are 1 dollar or more then it shows up
+        if (count > 0)
+        {
+            avg = (double)sum/count;
+        }
+        
+        return avg;
+    }
+
+
+
+Step 6: Test your class.
+
+/*
+running below WITHOUT lambda function/expression
+
+Average is 1875.0
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  2.344 s
+Finished at: 2020-07-16T18:39:36-07:00
+------------------------------------------------------------------------
+*/

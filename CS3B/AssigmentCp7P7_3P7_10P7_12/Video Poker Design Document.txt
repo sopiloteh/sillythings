@@ -1,0 +1,160 @@
+CS003B
+Erick Bravo
+Design Document P7.12 Video Poker
+
+
+Step 1: Find out which methods you are asked to supply.
+
+
+Step 2: Specify the public interface.
+
+Card Class
+Public card
+Public string toString()
+Public int getFace()
+Public int getSuit()
+Public int compareTo()
+
+Deck class
+Public deck()
+Public void shuffle()
+Public void dealHand()
+Public void playPoker()
+Public void changeHand()
+
+Hand class
+Public void setHand
+Public Card getCard()
+Public void sortHand()
+Public void printHand()
+
+
+
+
+
+Step 3: Document the public interface.
+bit too massive for this file, please see code for documentation
+though  its a mess and not working
+
+
+
+
+Step 4: Determine instance variables.
+
+Deck class
+    private Card[] deck;
+    private int currentCard = 0;
+    private final int number = 52;
+    private Random randomNumbers = new Random();
+    private Hand handPlayer = new Hand();
+    private static final int royalFlush = 8;
+    private static final int fourOfAKind = 7;
+    private static final int fullHouse = 6;
+    private static final int flush = 5;
+    private static final int straight = 4;
+    private static final int threeOfAKind = 3;
+    private static final int twoPairs = 2;
+    private static final int onePair = 1;
+    private static final int noPair = 0;
+    private static String[] CardOrder = {"No pair", "One Pair", "Two Pair",
+    "Three of a Kind", "Straight", "Flush", "Full House", "Four of a Kind",
+    "Royal Flush"};
+
+Hand Class
+    private Card[] hand = new Card[5];
+    private int count = 0;
+    private static final int ROYAL_FLUSH = 8;
+    private static final int FOUR_OF_A_KIND = 7;
+    private static final int FULL_HOUSE = 6;
+    private static final int FLUSH = 5;
+    private static final int STRAIGHT = 4;
+    private static final int THREE_OF_A_KIND = 3;
+    private static final int TWO_PAIRS = 2;
+    private static final int ONE_PAIR = 1;
+    private static final int NO_PAIR = 0;
+
+
+Step 5: Implement constructors and methods.
+
+    public Deck()
+    {
+        deck = new Card[number];
+        for (int count = 0; count < deck.length; count++)
+        {
+            deck[count] = new Card(count%13, count/13);
+        }
+    }
+
+    public void shuffle()
+    {
+        for (int first = 0; first < deck.length; first++)
+        {
+            int second = randomNumbers.nextInt(number);
+            Card temp = deck[first];
+            deck[first] = deck[second];
+            deck[second] = temp;
+        }
+    }
+    
+    //dealing out the shuffled hand
+    public void dealHand()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            handPlayer.setHand(i, deck[currentCard++]);
+        }
+    }
+
+    //playing the shuffled hand
+    public void playPoker()
+    {
+        shuffle();
+        dealHand();
+        System.out.println("Your hand is: ");
+        handPlayer.printHand();
+        Scanner input = new Scanner(System.in);
+        
+        // if you dont like the hand, you can swap it out
+        System.out.println("Specifiy number of cards you want to change");
+        int choice = input.nextInt();
+        
+        // changing all the players cards
+        if (choice == 5)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                changeHand(i++);
+            }
+        }
+        
+        //changing only some cards
+        else if (choice != 0)
+        {
+            for (int i = choice; i > 0; i--)
+            {
+                System.out.println("Enter the position of card you want to change: ");
+                changeHand(input.nextInt());
+            }
+        }
+        
+        else if (choice == 0)
+        {
+        System.out.printf("Your Result is : %s",CardOrder[handPlayer.score()]);
+        System.out.println("Your hand is: ");
+        handPlayer.printHand(); 
+        }
+       
+    }
+    
+    // swapping out hands if needed
+    
+    public void changeHand(int cardIndex)
+    {
+        handPlayer.setHand(cardIndex.deck[currentCard++]);
+    }
+
+
+Step 6: Test your class.
+
+
+not working due to logic errors ):
