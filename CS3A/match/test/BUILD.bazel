@@ -1,0 +1,10 @@
+cc_test(
+	name="match_test",
+	srcs=["match_test.cpp"],
+	copts=["-Iexternal/gtest/include"],
+	deps=[
+		"@gtest//:main",
+		"//match",
+		"//data"
+	]
+)

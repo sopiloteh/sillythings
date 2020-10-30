@@ -121,3 +121,31 @@ int main()
     //INHERIT all the variables from the main class so only one class has to be called, this makes it easeier to understand now!
     return 0;
 }
+
+/*
+
+eevak test is:
+running, 
+B cant be humanoid
+start/stop
+
+gelatin test is:
+shape, needs to overload something
+B cant be humanoid
+sphere, flat, default; three options only
+can split
+
+human test is 
+basic, gender is false boolean
+needs to be a humanoid
+
+kaylon test is
+basics, needs to fire
+needs to be humanoid
+
+moclan test is
+basics, needs to show is not an egg
+needs to be humanoid
+lays eggs, has an egg form?
+
+*/

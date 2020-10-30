@@ -106,8 +106,9 @@ double BankAccount::get_rate()
 
 void BankAccount::output(ostream& outs)
 {
-    outs.setf(ios::fixed)
-    
+    outs.setf(ios::fixed);
+    outs.setf(ios::showpoint);
+    outs.pre
 }
 int main()
 {
