@@ -1,10 +1,17 @@
+/**
+ * Original Dating Sim
+ *
+ * Copyright (c) 2020, Erick Bravo
+ */
+
 #include <algorithm>
 #include <vector>
 #include <cstdio>
 #include "data/data.h"
 #include "match/match.h"
 
-int main() {
+int main() 
+{
 	std::vector<Profile> up = profiles(100);
 	// for (auto p : up) {
 	// 	printf("%d, %d: %f, %d: %f, %d: %f, %d: %f, %d: %f, %d: %f\n",
@@ -18,11 +25,17 @@ int main() {
 	// 		std::get<0>(p.smoking), std::get<1>(p.smoking));
 	// }
 
+	// map that pulls in from pairs 
 	std::map<uint32_t, uint32_t> m = Match::pairs(up);
+
+	// goes over the new map to print it out
 	std::map<uint32_t, uint32_t>::iterator it = m.begin();
 
-	while (it != m.end()) {
-		printf("%u %u\n", it->first, it->second);
-		it++;
+	// prints out the sorted pairings, only male and female
+	printf("Sorted pairings\nMale : Female\n");
+	while (it != m.end()) 
+	{
+	  printf("%u %u\n", it->first, it->second);
+	  it++;
 	}
 }
