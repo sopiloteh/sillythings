@@ -8,12 +8,13 @@
 #include "data/data.h"
 #include "match/match.h"
 
-TEST(testMatch,myMatchTest)
+TEST(mapTest, test1)
 {
-  EXPECT_THAT(100, Match::pairs(std::vector<Profile>));
+  
   
   // test to see if there are pairings
   
+  EXPECT_EQ(50, std::map<uint32_t, uint32_t> m);
   //EXPECT_EQ();
   //EXPECT_FALSE();
 }
@@ -25,9 +26,3 @@ TEST(data,profile)
 
 }
 
-// TEST(match,report)
-// {
-//   // checks to see if it prints something
-//   EXPECT_EQ();
-//   EXPECT_FALSE();
-// }
