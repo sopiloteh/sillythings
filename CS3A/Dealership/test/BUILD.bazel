@@ -1,0 +1,21 @@
+cc_test(
+	name="dealer_test",
+	srcs=["dealer_test.cpp"],
+	copts=["-Iexternal/gtest/include"],
+	deps=[
+		"@gtest//:main",
+		"//dealer",
+		"//data"
+	]
+)
+
+cc_test(
+	name="agent_test",
+	srcs=["agent_test.cpp"],
+	copts=["-Iexternal/gtest/include"],
+	deps=[
+		"@gtest//:main",
+		"//dealer",
+		"//data"
+	]
+)
