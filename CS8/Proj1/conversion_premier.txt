@@ -1,0 +1,20 @@
+As a user, I have the right to upgrade to basic since I'm  made of monies.
+
+Acceptance criteria:
+- guest should be able to request that their membership status is upgraded into premier since they are worth it.
+- guest should also have warning to show what they will have once converted to premier.
+- guest should be assured that their sales history will still be saved.
+
+Definition of done:
+The user will see when requested their premier level status with premier level rewards and or services.
+
+Tasks:
+- to do
+
+Tests:
+- when running the membership level report for the selected user, should return premier
+- have users account try to access premier level functions, be allowed
+- user should have a conversion date from basic to premier.
+
+Story points:
+-to be filled in

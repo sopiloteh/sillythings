@@ -1,0 +1,24 @@
+As a user, I have the right to downgrade to basic since I'm not made of monies.
+
+Acceptance criteria:
+- guest should be able to request that their membership status is downgraded into basic as to pay less and use simpler features at Costco.
+- guest should also have warning to show what they will and won't have once converted to basic.
+- guest should be assured that their sales history will still be saved.
+
+Definition of done:
+The user will see when requested their basic level status with basic level rewards and or services.
+
+Tasks:
+- implement the memberedit class to allow user to change
+- implement inheritance from creation class to use a pointer to edit existing users
+- implement a gui to contain all the above
+- imherit the save button to allow edits to be saved
+
+
+Tests:
+- when running the membership level report for the selected user, should return basic
+- have users account try to access premier level functions, be denied
+- user should have a conversion date from premier to basic
+
+Story points:
+-5

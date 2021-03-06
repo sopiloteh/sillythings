@@ -1,0 +1,22 @@
+A member should be able to use coupons at Costco
+
+Acceptance criteria:
+- basic and premier members can use coupons at the store, discounts show on the purchase at the end
+- basic members can use Costco coupons, while premier members can use competitor and Costco coupons
+- discounts always show at the end, they aren't applied to individual items.
+
+Definition of done:
+On a sales purchase window, clicking the coupon gui will show another window in where the team member can enter in the dollar amount of coupons they have. There should also be a checkbox to select if they are using Costco coupons or if they are using a competitors coupons. The checkbox will verify if the member can use it or not. If allowed it continues, if not allowed the program ignores the amount or deletes it. Once saved the amount of coupons are added to discount the total sales amount.
+
+Tasks:
+- implement a class with an array to allow user input of discount codes
+- implement a class to differentiate between store and competitor coupons
+- implement inheritance with above class to allow basic and premier level perks in regards to coupons
+
+Tests:
+- verify competitor coupons
+- verify coupons discount from total
+- verify that coupon mode can verify basic vs premium
+
+Story points:
+- 6

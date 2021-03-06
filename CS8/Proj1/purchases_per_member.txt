@@ -1,0 +1,23 @@
+A user should be able to enter a membership number or name and get a list of the total purchases per that member.
+
+Feature: Total Purchases Per Member Report
+As a user, I want to be able to access a purchases report for any particular member.
+
+Acceptance criteria:
+- Report should include all purchases a member has made.
+- Report should allow for input of either a membership number, or name.
+
+Definition of done:
+The user should be able to request for the member's purchases report by clicking a button on the GUI. Then, a window should pop up containing the information listed in the acceptance criteria. The application should remain stable and properly responsive as the user manipulates the View.
+
+Tasks:
+- implement the save class
+- implement a class to tally up purchases in an array
+- implement a gui to show purchases made per member
+- implement/inheritance to rewards class
+
+Tests:
+- Clicking the purchases report button should print the member sales report with the promised information in the right order.
+- If there is no member found for the requested ID, then the report should be empty and should say to the user that there was no member found.
+
+Story points: 5

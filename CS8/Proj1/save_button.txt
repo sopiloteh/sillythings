@@ -1,0 +1,25 @@
+A save feature. More or less a button that allows you to save between scanning in  new orders, editing a basic or premier users data.
+
+Feature: Save Button
+As a user, I want the ability to save when I want to so I don't loose my work.
+
+Acceptance Criteria:
+- exiting without saving should prompt user to save
+- saving shows a saved dialog
+- clicking save, overwrites old data. It does not keep anything old as is it is overwritten with new data. 
+- user can see save time
+
+Definition of done:
+The user will click a save button on any edit screen that the user is currently in. From top of head I can think of scanning in sales orders, adding orders, adding a new guest to basic or premier rewards membership. Updating a user to premier or downgrading a user to basic. Once save button is clicked, a new dialog will appear that says saved along with time and date. There should also be a saved dialog that shows save history. User saved at this time, etc.
+
+Tasks:
+- implement a gui to create a save button
+- implement a class to save data to assigned array
+
+Tests:
+-exit without saving
+- repeatedly save and check data integrity
+- make massive edits and save to see if save button logic can cater to big data
+
+Story points:
+- 4

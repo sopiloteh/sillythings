@@ -1,0 +1,25 @@
+As a user who shops, I want to be reward like a guinea pig to shop at Costco.
+
+Acceptance criteria:
+- there should be a single track to a rewards path, it will allow all users to have rewards.
+- basic users will have rewards at certain levels, premier users will get those same rewards in addition to getting incremental rewards in between.
+- premier users will also have special double earning days to get rewards faster. 
+- rewards will only go out to active users, not expired users.
+
+Definition of done:
+A sales report can be run to show that a certain user has earned enough to gain a reward. This reward will then be added to the sales receipt of that said user and then saved in history.
+
+Tasks:
+-implement a class to assign points
+-implement a class/array to  save points
+-implement the above array to print out rewards at certain levels
+-implement/inheritance to allow basic and premier memberships to gain different rewards via a class
+
+Tests:
+- premier members should always have more reward levels then basic users
+- both premier and basic users should be able to earn the same level rewards
+- basic users can only get level rewards, not increments
+- point earning days should apply to premier members only
+
+Story points:
+-8

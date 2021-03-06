@@ -1,0 +1,25 @@
+A yearly sales report.  It should include a list of the items and quantities sold in the given year.  Report the total revenue for the given year.  The report should highlight the best performing items as well as the worst performing items for the year.  
+
+Feature: Yearly Sales Report
+As a user, I want to be able to access a sales report for any particular year.
+
+Acceptance criteria:
+- Sales report should include a list of items and quantities sold in the given year. 
+- Sales report should report the total revenue for the given year
+- Sales report should highlight the best performing items as well as the worst performing items for the year.
+- The user will be able to view this summary for all members, but will also have the option to specify the report to show only basic members or preferred members.
+
+Definition of done:
+The user should be able to request for the yearly sales report by clicking a button on the GUI. Then, a window should pop up containing the information listed in the acceptance criteria. There will also be a set of options allowing the user to specify the sales report for basic and preferred members. The application should remain stable and properly responsive as the user manipulates the View.
+
+Tasks:
+- implement sales report class
+- implement/inheritance from membership class to pull user into
+- implement a gui that prints out the report as txt
+
+Tests:
+- Clicking the yearly sales button should print the yearly sales report with the promised information in the right order.
+- If there are no sales for the requested year, then the yearly report should be empty. An empty sales report should say to the user that there are no entries.
+- Clicking the specification buttons ("Show basic members only" & "Show preferred members only") should restrict the yearly sales report in the proper way. If no members of that type shopped on the given year, the report should be empty, except for a message to the user saying that there are no entries that fit the requested criteria.
+
+Story points: 8

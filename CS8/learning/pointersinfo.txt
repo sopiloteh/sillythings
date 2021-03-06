@@ -1,0 +1,73 @@
+When using pointers in c++, it has to use an astrisk
+Like this as an example 
+Int *x;
+Double *x;
+Float *x;
+Char *ch;
+All this does is tell the code to look at the memory address of the variable such as the physical memory location, not the value of the variable itself
+
+There are also another operators that work with the asterisk, the ampersand. It is the reference operator, while the asterisk is the deference operator
+& gets the value of memory
+* gets the physical address
+It might be vice versa though
+
+#include <iostream>
+using namespace std;
+int main() {
+	int  x = 27;  // this is the original value
+	int  *ip;     // a pointer to look somewhere  
+	ip = &x;      // the pointer is looking at the memory address of x
+	cout << "Value of x is : "; //this prints out the value of x
+	cout << x << endl;	   
+	cout << "Value of ip is : ";
+	cout << ip<< endl;         // this prints out the memory value that the pointer is looking at
+	cout << "Value of *ip is : ";
+	cout << *ip << endl;	 // this prints out whatever is being stored in that memory value
+	return 0;
+}
+
+You can use pointers for simple variables with any rules, however with arrays you have to apply it in a specific pattern
+
+Int arr[20]; = an array of 20 items
+P = arr; this array is now pointing to p
+The following does not work
+P = &arr;
+This won't let you get the values, it will only give the memory of the first value pr just its own address really
+
+#include <iostream>
+using namespace std;
+int main() {
+	int *ip; // a variable 
+	int arr[] = { 10, 34, 13, 76, 5, 46 }; // this is a standard basic array
+	ip = arr; // now the array is being pointed at by the pointer
+	for (int x = 0; x < 6; x++)  // this allows transversal over the array
+				    // because the pointer is copying the values from   						
+				       the array, nothing in the array itself will be 					  		       
+					affected
+	{
+		cout << *ip << endl;
+		ip++;			// moves the loop forward by one
+	}
+	return 0;
+}
+
+You can also assign null to a pointer to sent it to blank rather then 0 because 0's memory holder could always change from computer to computer while NULL forces it to be blank and 0000
+
+You can also manipulate the memory that the pointer is looking, there are two ways to do this
+ Int *p OR int* p;
+Both of them look at the variables memory location
+
+// the below has the following
+Int *p, x = 30;  *p is a pointer, x is a variable
+Now p which is related to *p is pointing to the value of memory at x using the & operator
+This copies what is in x into the pointer p
+Then you can print out that value
+#include <iostream>
+
+using namespace std;
+int main() {
+	int *p, x = 30;
+	p = &x;
+	cout << "Value of x is: " << *p;
+	return 0;
+}

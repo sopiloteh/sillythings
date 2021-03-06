@@ -1,0 +1,25 @@
+A team member should be able to add and or delete guests from the system
+
+Acceptance criteria:
+- new guests are added to their shopping receipts, the cost of a new membership
+- old guests should also have their expiration added to their receipts with a zero balance
+- every edit is saved as to make it permanent
+- when creating new users, have the option to ugrade
+
+Definition of done:
+Clicking on the gui button onboarding will show a new window. This window will have two buttons
+Onboarding and off boarding. Onboarding will allow a guest become a member, it will have an upgrade button and save button there. Offboarding will allow a member to cancel their membership and then to close out the account and saving it on their receipt.
+
+Taks:
+- implement a gui to allow user input
+- implement a class array called members that will be inherited to other classes
+- implement a protected members in above said class to allow use but not edits
+- implement the save button class
+
+Tests:
+- allow a guest to become a member
+- allow a member	to become a guest
+- make edits to a user after they leave or join, the program should error and not allow it 
+
+Story points:
+-6
