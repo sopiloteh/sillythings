@@ -1,0 +1,7 @@
+/offsideStorage1/production/star wars/reel1/partA/1920x1080
+/offsideStorage4/production/starwars/reel - -  1/VFX/Hydraulx
+/offsideStorage1/production/starwars/reel1/partB/pickups/1920x1080
+/offsideStorage1/production/starwars/reel1/VFX/ Framestore
+/offsideStorage3/production/starwars/reel1/ VFX /AnimalLogic
+/offsideStorage1/production/starwars/reel1/partB/1920x1080
+/offsideStorage2/production/starwars/pickups/shot_1ab/1920 x 1080

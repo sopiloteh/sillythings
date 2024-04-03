@@ -1,0 +1,17 @@
+This is what is needed for baselight and xyztech files
+
+take the both files and pair them up with whatever frames they have
+so if baselight has frames 9-100 and xyztech asks for frames 5-9 for author james cut them out and put them in an excel sheet
+this excel sheet will be called the frames to fix. Ideally youll use argparse to insert the files and run the commands
+
+secondly after the excel frames to fix is created, youll dump these files into and sql database
+allow some read and write to see the tables
+
+finally youll run the script against the twitch test video, find all the ranges inside the video then
+using ffmpeg pull out the frames, youll want to convert the marks to timecode
+
+add to your argparse an output parameter for a new xls file that will attach these frames to a sheet
+with the name and the frame and requestor
+
+finally youll output each frame to be rendered in frame.io  and youll be done!
+

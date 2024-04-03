@@ -1,0 +1,43 @@
+this is psudeocode for the script project
+
+we have two input files that we get
+File A has all the filepaths of the shots that we are using
+File B has all the frames and filepaths of shots, they arent catagorized
+
+    inputA = file.xlsx, open as strings
+    inputDumpA = inputA
+
+the script should take in both files and put them into a storage type of file, this has to be the best one for python since it will be
+mainly run in python
+
+storage A should just store all the filepaths 
+storage B should strip out file paths and the frame numbers, each frame number should be as such 100-105, 109-123 , 125, 190-211, etc
+
+the script will then look at the file path thats in A then looking at B, see what paths/frames match up
+
+
+these will be sorted into a storage array and a csv, this is section one
+
+now section two will take that storage array and punch those locations and frames into a SQL database
+for each item thats entered, it should have
+  filepath
+  frames
+  editor
+  what needs to be done if anything
+
+the standard SQL commands should work like insert, delete, view onto the terminal prompt
+
+once thats done thats the end of section 2
+
+Section 3 wiil take all the info inside the SQL database and then run it thru FFMPEFG
+it will run it using a test video, the video will only be a certain length the script should first find the timecode on the video
+
+using this timecode then the script will match up frames to time code spots, anything that matches will be processed
+FFMPEG will be run on the frames then exported out to an excel sheet
+
+the excel sheet will have the same items as in Section 1 CSV but now with photos added in it
+
+after all the items are written in the excel sheet, then all the frames will be rendered into frame.io 
+once all this is done, the script should finish. 
+
+This will be written in python using SQL, ffmnpeg hardware engine and some other API's
