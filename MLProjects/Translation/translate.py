@@ -115,6 +115,37 @@ def bagofcharacters(input_texts,target_texts):
 
   return en_in_data,dec_in_data,dec_tr_data
 
+#creating an object to hold the total amount of encoded char that this model will use
+en_inputs = Input(shape=(None, num_en_chars))
 
-  
+#creating a long short term memeory with 256 dimensions, it will always return true
+encoder = LSTM(256, return_state = True)
+
+#discard the encoder output since we only want the actions to save and be stored in the Hidden & Cell state
+en_outputs, state_h, state_c = encoder(en_inputs)
+en_states = [state_h, state_c]
+
+#creating an object to hold the total amount of decoded char that this model will use
+dec_inputs = Input(shape=(None, num_dec_chars))
+
+#creating a long short term memeory with 256 dimensions, it will always return true
+dec_lstm = LSTM(256, return_sequences = True, return_state = True)
+
+#now the encoder states that were saved will start up the decoder
+dec_outputs, _, _ = dec_lstm(dec_inputs, initial_state=en_states)
+
+#the output layer will have the total number of decoder chars we specified earlier
+dec_dense = Dense(num_dec_chars, activation = "softmax")
+dec_outputs = dec_dense(dec_outputs)
+
+
+#with these functions created, there should be enough to now be able to train the model
+
+model = Model({en_inputs, dec_inputs}, dec_outputs)
+
+pickle.dump({'input_characters':input_characters, 'target_characters':target_characters, 'max_input_length':max_input_length, 'max_target_length':max_target_length, 'num_en_chars':num_en_chars, 'num_dec_chars':num_dec_chars}, open("training_data.pkl","wb"))
+
+#this loads in the data and tells it to start training
+en_in_data, dec_in_data, dec_tr_data = bagofcharacters(input_texts, target_texts)
+model.compile(optimizer = "adam", loss="catagorical_crossentropy", metrics=["accuracy"])
 
