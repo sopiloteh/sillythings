@@ -10,11 +10,12 @@ import numpy as np
 import pickle
 
 # Load all the required modules. This looks like it errors out 
-from tensorflow.keras.models import Model  # Fix the typo here
-from tensorflow.keras import models  # Fix the typo here
+from tensorflow.keras.models import Model  # Corrected typo
+from tensorflow.keras import models  # Corrected typo
 from tensorflow.keras.utils import plot_model
 from tensorflow.keras.layers import Input, LSTM, Dense
-from sklearn.feature_extraction.text import CountVectorizer 
+from sklearn.feature_extraction.text import CountVectorizer
+
 
 print(tf.__version__)
 
@@ -64,49 +65,33 @@ print('Max target length: ',max_target_length)
 
 def bagofcharacters(input_texts,target_texts):
   #starting up some empty lists so as to have the encoded, decoded and translated data
-  en_in_data = [] ; dec_in_data = [] ; dec_tr_data = []
+  en_in_data = [] ; dec_in_data = [] ; dec_tr_data = [];
 
   #this is the start of the Sequance to Sequance model implimentation, pad_en starts with a 1 then adds 0 by the amount of chars
   pad_en=[1]+[0] * (len(input_characters) - 1)
   #this ends the Sequence to Sequence model by ending it with an ending tag with the number of 0's by the char and moves the index to 2
-  pad_dec=[0] * (len(target_characters)) ; pad_dec[2] = 1
+  pad_dec=[0] * (len(target_characters))
+  pad_dec[2] = 1
 
   #this turns each word into a token at each white space, since it is char letters, that is what the vectorizer will focus on
   cv = CountVectorizer(binary=True,tokenizer=lambda txt: txt.split(), stop_words=None, analyzer='char')
-  
-  #this is to get the chars to fit in correctly into the CountVectorizer function
-  for i, (input_t,target_t) in enumerate(zip(input_texts,target_texts)):
+
+  for input_t, target_t in zip(input_texts, target_texts):
     cv_inp = cv.fit(input_characters)
     en_in_data.append(cv_inp.transform(list(input_t)).toarray().tolist())
     cv_tar = cv.fit(target_characters)
-  #the decoder target will always start 1 step ahead of the uncoded input
     dec_tr_data.append(cv_tar.transform(list(target_t)[1:]).toarray().tolist())
-  
-  #the following if statments are to add either a Sequence to Sequence or Ending to Sequence token to the text
-  #this depends on the length of the char 
-  if len(input_t) < max_input_length:
-    for _ in range(max_input_length - len(input_t)):
-      en_in_data[i].append(pad_en)
-  
-  if len(target_t) < max_target_length:
-    for _ in range(max_target_length - len(target_t)):
-      dec_in_data[i].append(pad_dec)
 
-  if (len(target_t) - 1) < max_target_length:
-    for _ in range(max_target_length - len(target_t) + 1):
-      dec_tr_data[i].append(pad_dec)
-  
-  if len(input_t) < max_input_length:
-    for _ in range(max_input_length - len(input_t)):
-      en_in_data[i].append(pad_en)
-  
-  if len(target_t) < max_target_length:
-    for _ in range(max_target_length - len(target_t)):
-      dec_in_data[i].append(pad_dec)
-  
-  if(len(target_t) - 1) < max_target_length:
-    for _ in range(max_target_length - len(target_t) + 1):
-      dec_tr_data[i].append(pad_dec)
+    # Pad or truncate en_in_data[i] to ensure all elements have the same length
+    en_in_data[-1] = en_in_data[-1][:max_input_length] + [pad_en] * (max_input_length - len(en_in_data[-1]))
+
+    dec_in_data.append([])
+
+    # Append pad_dec to dec_in_data[i]
+    dec_in_data[-1] = dec_in_data[-1][:max_target_length] + [pad_dec] * (max_target_length - len(dec_in_data[-1]))
+
+    # Append pad_dec to dec_tr_data[i]
+    dec_tr_data[-1] = dec_tr_data[-1][:max_target_length] + [pad_dec] * (max_target_length - len(dec_tr_data[-1]))
   
   #all the arrays are turned to float32 as to keep proper track of the large amount of 1's & 0's
   en_in_data = np.array(en_in_data, dtype="float32")
@@ -114,6 +99,44 @@ def bagofcharacters(input_texts,target_texts):
   dec_tr_data = np.array(dec_tr_data, dtype="float32")
 
   return en_in_data,dec_in_data,dec_tr_data
+  
+  #this is to get the chars to fit in correctly into the CountVectorizer function
+"""   for i, (input_t,target_t) in enumerate(zip(input_texts,target_texts)):
+
+    dec_in_data.append([]) # there is an error if you dont initalize the decoded data as 0
+
+    cv_inp = cv.fit(input_characters)
+    en_in_data.append(cv_inp.transform(list(input_t)).toarray().tolist())
+    cv_tar = cv.fit(target_characters)
+  #the decoder target will always start 1 step ahead of the uncoded input
+    dec_tr_data.append(cv_tar.transform(list(target_t)[1:]).toarray().tolist())
+      #the following if statments are to add either a Sequence to Sequence or Ending to Sequence token to the text
+  #this depends on the length of the char 
+    if len(input_t) < max_input_length:
+      for _ in range(max_input_length - len(input_t)):
+        en_in_data[i].append(pad_en)
+  
+    if len(target_t) < max_target_length:
+      for _ in range(max_target_length - len(target_t)):
+        dec_in_data[i].append(pad_dec)
+
+    if (len(target_t) - 1) < max_target_length:
+      for _ in range(max_target_length - len(target_t) + 1):
+        dec_tr_data[i].append(pad_dec)
+  
+    if len(input_t) < max_input_length:
+      for _ in range(max_input_length - len(input_t)):
+        en_in_data[i].append(pad_en)
+  
+    if len(target_t) < max_target_length:
+      for _ in range(max_target_length - len(target_t)):
+        dec_in_data[i].append(pad_dec)
+  
+    if(len(target_t) - 1) < max_target_length:
+      for _ in range(max_target_length - len(target_t) + 1):
+        dec_tr_data[i].append(pad_dec) """
+  
+
 
 #creating an object to hold the total amount of encoded char that this model will use
 en_inputs = Input(shape=(None, num_en_chars))
@@ -141,11 +164,27 @@ dec_outputs = dec_dense(dec_outputs)
 
 #with these functions created, there should be enough to now be able to train the model
 
-model = Model({en_inputs, dec_inputs}, dec_outputs)
+model = Model([en_inputs, dec_inputs], dec_outputs)
 
 pickle.dump({'input_characters':input_characters, 'target_characters':target_characters, 'max_input_length':max_input_length, 'max_target_length':max_target_length, 'num_en_chars':num_en_chars, 'num_dec_chars':num_dec_chars}, open("training_data.pkl","wb"))
 
 #this loads in the data and tells it to start training
 en_in_data, dec_in_data, dec_tr_data = bagofcharacters(input_texts, target_texts)
-model.compile(optimizer = "adam", loss="catagorical_crossentropy", metrics=["accuracy"])
+model.compile(optimizer = "adam", loss="categorical_crossentropy", metrics=["accuracy"])
+
+model.fit(
+  [en_in_data, dec_in_data],
+  dec_tr_data,
+  batch_size= 64,
+  epochs = 200,
+  validation_split =0.2,
+)
+#this saves the model in the directory s2s which is outputed as saved_model.pb, this will include the details of the generated model
+#the s2s directory is also where the weights from the Seq 2 Seq encoding
+model.save("s2s")
+
+model.summary()
+plot_model(model, to_file='Model_plot.png', show_shapes=True, show_layer_names=True)
+
+
 
